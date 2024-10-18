@@ -1,0 +1,164 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background: #333;
+    color: white;
+}
+
+.navbar {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#toggleTheme {
+    margin-left: 20px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.form-container {
+    flex: 1;
+    margin-right: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.preview-container {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    color: #007bff;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+    background-color: #f9f9f9;
+}
+
+input:focus, textarea:focus {
+    border-color: #007bff;
+    background-color: #fff;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#profilePreview {
+    display: none;
+    margin-top: 10px;
+    max-width: 100px; /* Limit the profile image size */
+    border-radius: 50%;
+}
+
+.resume-preview {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom right, #f0f8ff, #e6f7ff);
+    border: 2px solid #007bff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.resume-preview h2 {
+    color: #007bff;
+    text-align: center;
+}
+
+.resume-preview h3 {
+    color: #0056b3;
+}
+
+.resume-preview p {
+    color: #333;
+    margin: 5px 0;
+}
+
+.feedback {
+    text-align: center;
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.download-btn, .print-btn {
+    margin-top: 10px;
+    background-color: #007bff;
+}
+
+.download-btn:hover, .print-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Adding some subtle texture to the form background */
+.form-container {
+    background-image: url('https://www.transparenttextures.com/patterns/white-paper.png');
+}
